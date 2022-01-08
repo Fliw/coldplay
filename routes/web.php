@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','App\Http\Controllers\pagesController@index');
+Route::get('/album/{album}','App\Http\Controllers\pagesController@album');
+Route::get('/event','App\Http\Controllers\pagesController@event');
