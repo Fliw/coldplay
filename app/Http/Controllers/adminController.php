@@ -12,7 +12,6 @@ class adminController extends Controller
     }
 
     public function events(){
-        //get all data from event table sort it by desc
         $events = event::orderBy('id', 'desc')->get();
         return view('admin.pages.events', compact('events'));
     }
