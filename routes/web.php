@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','App\Http\Controllers\pagesController@index');
 Route::get('/album/{album}','App\Http\Controllers\pagesController@album');
 Route::get('/event','App\Http\Controllers\pagesController@event');
+
+//route for admin
+Route::get('/admin','App\Http\Controllers\adminController@index');
+
+//admin event related routes
+Route::get('/admin/events','App\Http\Controllers\adminController@events');
+Route::post('/admin/event/store','App\Http\Controllers\adminController@storeEvent');
+Route::post('/admin/event/update/{event}','App\Http\Controllers\adminController@updateEvent');
+Route::get('/admin/event/delete/{event}','App\Http\Controllers\adminController@deleteEvent');
