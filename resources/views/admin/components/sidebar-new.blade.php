@@ -16,7 +16,7 @@
                 </a>
             </li>
             <li class="{{ (request()->is('admin/albums')) ? 'active' : '' }}">
-                <a href="./admin/albums">
+                <a href="./albums">
                     <i class="tim-icons icon-headphones"></i>
                     <p>Albums Management</p>
                 </a>
