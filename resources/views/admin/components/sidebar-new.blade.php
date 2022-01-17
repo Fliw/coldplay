@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="{{ (request()->is('admin/events')) ? 'active' : '' }}">
-                <a href="./events">
+                <a href="/admin/events">
                     <i class="tim-icons icon-pin"></i>
                     <p>Events Management</p>
                 </a>
